@@ -33,8 +33,8 @@ const App: React.FC = () => {
       
       <Box
         sx={{
-          height: '100vh',
-          width: '100vw',
+          height: '100dvh',
+          width: '100dvw',
           overflow: 'hidden',
           display: 'flex',
           alignItems: 'center',
@@ -49,7 +49,7 @@ const App: React.FC = () => {
           maxWidth={false}
           disableGutters
           sx={{ 
-            height: '100vh',
+            height: '100dvh',
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
