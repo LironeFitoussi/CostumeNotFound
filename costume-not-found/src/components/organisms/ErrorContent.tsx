@@ -16,7 +16,16 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
   megilatEsther,
   isHebrew
 }) => (
-  <>
+  <Box 
+    sx={{ 
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: 4,
+      flex: 1,
+    }}
+  >
     <Box 
       sx={{ 
         position: 'relative',
@@ -41,7 +50,17 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
       />
     </Box>
     
-    <Box sx={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
+    <Box 
+      sx={{ 
+        textAlign: 'center', 
+        position: 'relative', 
+        zIndex: 1,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        gap: 2
+      }}
+    >
       <MatrixText 
         variant="h2" 
         component="h1" 
@@ -50,7 +69,7 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
           fontWeight: 'bold', 
           textShadow: '0 0 20px rgba(0, 255, 0, 0.5)',
           fontSize: { xs: '4rem', sm: '6rem' },
-          mb: 2
+          lineHeight: 1.1
         }}
       >
         404
@@ -61,7 +80,7 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
         isHebrew={isHebrew}
         sx={{ 
           fontSize: { xs: '1.5rem', sm: '2rem' },
-          mb: 3
+          lineHeight: 1.2
         }}
       >
         {message}
@@ -72,10 +91,11 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
         isHebrew={isHebrew}
         sx={{ 
           fontSize: { xs: '1rem', sm: '1.2rem' },
-          mt: 2,
           fontWeight: 'bold',
           fontStyle: 'italic',
           color: 'text.secondary',
+          maxWidth: '600px',
+          mx: 'auto'
         }}
       >
         {clever}
@@ -101,5 +121,5 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
         {megilatEsther}
       </Button>
     </Box>
-  </>
+  </Box>
 ); 
