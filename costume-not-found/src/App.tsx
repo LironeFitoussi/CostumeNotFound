@@ -56,10 +56,10 @@ const App: React.FC = () => {
             minHeight: '-webkit-fill-available',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'space-between',
+            justifyContent: 'center',
             alignItems: 'center',
             width: '100%',
-            p: { xs: 2, sm: 3 },
+            p: 0,
             m: 0,
             overflowY: 'auto',
             overflowX: 'hidden',
@@ -69,7 +69,7 @@ const App: React.FC = () => {
           <Paper 
             elevation={0}
             sx={{ 
-              p: { xs: 2, sm: 3 }, 
+              p: 0, 
               borderRadius: 0,
               display: 'flex',
               flexDirection: 'column',
