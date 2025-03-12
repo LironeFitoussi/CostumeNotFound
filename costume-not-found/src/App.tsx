@@ -42,7 +42,10 @@ const App: React.FC = () => {
           bgcolor: 'transparent',
           position: 'relative',
           zIndex: 2,
-          p: 0
+          p: 0,
+          minHeight: '-webkit-fill-available',
+          touchAction: 'none',
+          WebkitOverflowScrolling: 'touch'
         }}
       >
         <Container 
@@ -50,12 +53,17 @@ const App: React.FC = () => {
           disableGutters
           sx={{ 
             height: '100dvh',
+            minHeight: '-webkit-fill-available',
             display: 'flex',
             flexDirection: 'column',
-            justifyContent: 'center',
+            justifyContent: 'space-between',
+            alignItems: 'center',
             width: '100%',
-            p: 0,
-            m: 0
+            p: { xs: 2, sm: 3 },
+            m: 0,
+            overflowY: 'auto',
+            overflowX: 'hidden',
+            WebkitOverflowScrolling: 'touch'
           }}
         >
           <Paper 
@@ -65,13 +73,17 @@ const App: React.FC = () => {
               borderRadius: 0,
               display: 'flex',
               flexDirection: 'column',
-              gap: 2,
-              height: '100%',
+              gap: { xs: 3, sm: 4 },
+              height: 'auto',
+              width: '100%',
+              maxWidth: '100%',
               justifyContent: 'space-between',
+              alignItems: 'center',
               bgcolor: 'transparent',
               border: 'none',
               boxShadow: 'none',
-              background: 'transparent'
+              background: 'transparent',
+              my: 'auto'
             }}
           >
             <LanguageSwitcher 
@@ -92,7 +104,10 @@ const App: React.FC = () => {
               sx={{ 
                 color: 'text.secondary',
                 fontSize: { xs: '0.7rem', sm: '0.8rem' },
-                textAlign: 'center'
+                textAlign: 'center',
+                width: '100%',
+                mt: 'auto',
+                pb: { xs: 1, sm: 2 }
               }}
             >
               Lirone Fitoussi © {new Date().getFullYear()}
