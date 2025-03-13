@@ -7,7 +7,7 @@ export const BlurOverlay: React.FC = () => (
     left: 0,
     width: '100%',
     height: '100%',
-    background: 'rgba(0, 0, 0, 0.7)',
+    background: 'rgba(0, 0, 0, 0.4)',
     backdropFilter: 'blur(8px)',
     zIndex: 1,
     pointerEvents: 'none'
