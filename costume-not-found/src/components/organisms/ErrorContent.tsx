@@ -104,7 +104,7 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
       <Button 
         variant="contained" 
         color="primary"
-        href="https://mechon-mamre.org/p/pt/pt3301.htm"
+        href="https://www.tfilah.org/wp-content/uploads/downloads/2011/02/מגילת-אסתר.pdf"
         target="_blank" 
         rel="noopener noreferrer"
         sx={{ 
