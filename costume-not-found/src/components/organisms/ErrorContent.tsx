@@ -39,7 +39,7 @@ export const ErrorContent: React.FC<ErrorContentProps> = ({
     >
       <Box
         component="img"
-        src={robotImage}
+        src="https://i.ibb.co/cXMwy2Cj/IMG-0936.jpg"
         alt="404 Robot Error"
         sx={{
           width: 'auto',
