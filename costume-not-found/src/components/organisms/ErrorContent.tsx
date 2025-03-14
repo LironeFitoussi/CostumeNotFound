@@ -1,6 +1,5 @@
 import React from 'react';
 import { Box, Button } from '@mui/material';
-import robotImage from '../../assets/robot.png';
 import { MatrixText } from '../atoms/MatrixText';
 
 interface ErrorContentProps {
